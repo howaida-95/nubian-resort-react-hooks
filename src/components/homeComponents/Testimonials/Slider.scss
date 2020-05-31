@@ -1,0 +1,53 @@
+@import '../../../App.scss';
+%btn-style{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  transition: $main-transition;
+  border: none;
+  outline: none;
+  color: $p-color;
+  &:hover{
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+.Slider{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  .slide{
+    min-width: 100%; // one slide take the whole page
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0; // the half height of img 40px that appear out of card
+  }
+  button{
+    &#goLeft{
+      left: 0;
+      @extend %btn-style
+    }
+    &#goRight{
+      right: 0;
+      @extend %btn-style
+    }
+    &:hover .icon{
+      box-shadow: $shadow-lg
+    }
+    .icon{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+

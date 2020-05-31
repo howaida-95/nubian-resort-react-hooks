@@ -1,0 +1,23 @@
+@import '../../../../App.scss';
+.hotel-surrounding{
+  width: 100%;
+  background-color: #fff;
+  padding: 0.9375rem;
+  box-shadow: $shadow;
+  transition: $main-transition;
+  border-radius: $br;
+  img{
+    border-radius: 50%;
+    box-shadow: $shadow
+  }
+  .content{
+    width: 100%;
+    color: $title-color;
+    h3{
+      font-weight: 500
+    }
+  }
+  &:hover{
+    background-color: $primary-color
+  }
+}

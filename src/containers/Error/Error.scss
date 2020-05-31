@@ -1,0 +1,10 @@
+@import '../../App.scss';
+.error{
+  height: 100vh;
+  div{
+    text-align: center;
+    h1, h2{
+      color: $dark-color
+    }
+  }
+}

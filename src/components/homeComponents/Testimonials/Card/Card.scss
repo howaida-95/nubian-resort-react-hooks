@@ -1,0 +1,47 @@
+@import '../../../../App.scss';
+.card{
+  position: relative;
+  box-shadow: $shadow;
+  display: flex;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  width: 800px;
+  .img-container{
+    box-shadow: $shadow;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .card-body{
+    padding: 2rem;
+    span{
+      display: inline-block;
+      margin-bottom: 1rem;
+      .icon{
+        color: $primary-color;
+        font-size: 1.5rem;
+      }
+    }
+    p{
+      font-size: 0.875rem;
+      line-height: 1.8;
+      color: $p-color;
+      margin-bottom: 1rem;
+    }
+    strong{
+      font-family: $secondaryFont;
+      color: $title-color
+    }
+  }
+}

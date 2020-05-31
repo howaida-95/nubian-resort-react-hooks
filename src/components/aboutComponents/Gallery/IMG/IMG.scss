@@ -1,0 +1,15 @@
+@import '../../../../App.scss';
+.thumbnail{
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2ef;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+  &:hover{
+    box-shadow: $shadow
+  }
+  img{
+    width: 100%
+  }
+}
